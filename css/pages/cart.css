@@ -1,0 +1,86 @@
+section.cart article.flex
+{
+   background-color: var(--white);
+   border-top: 2px solid var(--bleu-buttom);
+   margin-top: 2rem;
+   justify-content: space-between;
+   max-width: 500px;
+   margin-inline: auto;
+   border-radius: 0 0 4px 4px;
+   font-weight: 500;
+   box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 1px -1px, rgba(0, 0, 0, 0.14) 0px 1px 1px 0px, rgba(0, 0, 0, 0.12) 0px 1px 3px 0px;
+   & .quantity
+   {
+    width: 20px;
+    height: 20px;
+    background-color: var(--bleu-buttom);
+    border-radius: 50%;
+    color: var(--white);
+    justify-content: center;
+    font-size: 0.8rem;
+    margin: 0 0.5rem;
+   }
+   & .decrease,.increase
+   {
+    color: var(--bleu-buttom);
+    
+    font-size: 1.5rem;
+    font-weight: 600;
+    
+   }
+ 
+}
+button.delet-cart
+{
+ background-color: rgb(241, 56, 56);
+ padding: 0.4rem 0.7rem;
+ margin-top: 0.8rem;
+ border-radius: 5px;
+ color: var(--white);
+}
+div.summary
+{
+    margin-top: 1.5rem;
+    width: 40%;
+    margin-inline: auto;
+    background-color: var(--white);
+    
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 1px -1px, rgba(0, 0, 0, 0.14) 0px 1px 1px 0px, rgba(0, 0, 0, 0.12) 0px 1px 3px 0px;
+    & .titel
+    {
+        border-bottom: 2px solid rgb(0,0,0,0.12);
+        margin-bottom: 0.2rem;
+        padding: 0.5rem 0;
+    }
+    & div.flex
+    {
+        justify-content: space-between;
+        margin-top: 0.8rem;
+        padding-inline: 0.8rem;
+    }
+    & .chekout
+    {
+        background-color: var(--bleu-buttom);
+        padding: 0.7rem 0;
+        width: 100%;
+        margin-bottom: 0.5rem;
+        margin-top: 0.3rem;
+        color:var(--white);
+
+    }
+    & .messag
+    {
+        color: rgb(255, 90, 123);
+        font-size: 1.1rem;
+        padding-bottom: 0.5rem;
+    }
+
+}
+@media (width <600px)
+{
+    div.summary
+    {
+        width: 80%;
+    }
+}

@@ -1,0 +1,167 @@
+div.top-imag
+{
+    background-image: url(../../images/bac.jpg);
+    height:100dvh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+ 
+}
+section.content
+{
+    position: absolute;
+    font-size: 2rem;
+    top: 45%;
+    margin-left: 10%;
+   transform: translateY(-50%);
+   width: 40%;
+   & .lifestyel
+   {
+    font-size: 1.7rem;
+   }
+   & .men
+   {
+    font-weight: bold;
+    margin-top: 0.7rem;
+
+
+   }
+   & .sale
+   {
+    margin-block: 0.5rem;
+    font-weight: bold;
+   }
+   & .shipping
+   {
+    font-size: 1.5rem;
+   }
+   & .shop
+   {
+    background-color: black;
+    color: white;
+    margin-top: 0.9rem;
+    font-size: 0.9rem;
+    border-radius: 3px;
+    padding: 0.6rem 1.6rem;
+   }
+
+
+    
+}
+@media(width < 1000px )
+{
+    div.top-imag
+    {
+        background-position: left;
+    }
+    section.content
+    {
+        & .lifestyel
+        {
+         font-size: 1.1rem;
+        }
+        & .men
+        {
+         font-weight: bold;
+         margin-top: 1rem;
+     
+     
+        }
+        & .shipping
+        {
+         font-size: 1.3rem;
+        }
+
+    }
+    
+}
+main section.products
+{
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem 1rem;
+
+    & article.card
+    {
+        transform: all 0.2s;
+        border-radius: 5px;
+       box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 1px -1px, rgba(0, 0, 0, 0.14) 0px 1px 1px 0px, rgba(0, 0, 0, 0.12) 0px 1px 3px 0px;
+       margin-top: 2rem;
+    }
+    & article.card:hover
+    {
+        scale: 1.01;
+    }
+    & img
+    {
+        border-radius: 5px 5px 0 0;
+    }
+     & .card .contetn-card
+    {
+        background-color: white;
+        border-radius: 0 0 5px 5px;
+    }
+    & .card .contetn-card .titel
+    {
+        padding-top: 0.7rem;
+        padding-inline: 0.4rem;
+        text-transform: capitalize;
+
+    }
+    & .card .contetn-card .discription
+    {
+        padding-inline: 0.4rem;
+        font-size: 0.8rem;
+        margin-top: 0.4rem;
+        margin-bottom: 0.5rem;
+        line-height: 1.1rem;
+    }
+    & .card .contetn-card .price
+    {
+        padding-inline: 0.4rem;
+        color: rgb(199, 8, 48);
+        font-weight: bold;
+        font-size: 0.8rem;
+    }
+    & .card .contetn-card .add-to-cart
+    {
+        background-color: var(--bleu-buttom);
+        border-radius: 4px;
+        color: #fff;
+        padding: 6px 8px;
+        font-size: 0.8rem;
+        margin-right: 0.8rem;
+
+    }
+    
+    
+
+}
+ main .pricipal-titel
+{
+    margin-top: 3rem;
+   
+    
+}
+@media(width < 618px )
+{
+  main
+  {
+    width: 100%;
+    & .pricipal-titel
+    {
+        font-size: 1.7rem;
+        text-align: center;
+    }
+  }
+  section.content
+  {
+    width: 70%;
+  }
+  /* footer
+  {
+
+  } */
+}

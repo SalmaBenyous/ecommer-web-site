@@ -1,0 +1,13 @@
+footer
+{
+    text-align: center;
+    background-color: var(--footerBg);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    padding-block: 1rem;
+    color: var(--white);
+    font-size: 17px;
+    margin-top: 2rem;
+    width: 100%;
+    
+}

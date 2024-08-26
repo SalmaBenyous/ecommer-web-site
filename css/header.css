@@ -1,0 +1,89 @@
+header.flex {
+  justify-content: space-between;
+  /*padding-left && padding-rigth*/
+  padding-inline: 10%;
+  & .sign-in {
+    margin-inline: 1rem;
+  }
+  & .sign-in,
+  .register {
+    border: 1px solid var(--bodyFont);
+    margin-inline: 1rem;
+    padding: 0.44rem 1rem;
+    border-radius: 55px;
+    font-size: 0.8rem;
+    font-weight: 500;
+  }
+
+& .sign-in:hover .fa-solid,
+ .register:hover .fa-solid,
+ & .sign-in:hover,
+ .register:hover
+{
+    color: var(--bleu);
+    background-color: var(--bodyFont);
+
+
+}
+& .link .fa-solid
+{
+    margin-right: 0.2rem;
+}
+& .cart
+{
+    background-color: var(--bodyFont);
+    color: var(--bleu);
+    font-size: 0.9rem;
+    padding: 0.44rem 1.1rem 0.44rem 0.6rem;
+    border-radius: 55px;
+}
+& .cart .fa-solid
+{
+    color: var(--bleu);
+}
+& .cart .product-number
+{
+    position: absolute;
+    top: -5px;
+    background-color: rgb(255, 90, 123);
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    text-align: center;
+    right: -2px;
+    color: var(--bodyBG);
+    font-weight: 400;
+}
+/*====================
+logo styel
+======================*/
+& .fa-bag-shopping
+{
+    font-size: 2rem;
+}
+}
+/*=====================
+width < 600
+=======================*/
+@media(width < 600px)
+{
+    .logo{
+        display: none;
+    }
+    header .flex{
+        justify-content: center;
+        padding-inline: 0;
+    }
+    .link
+    {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        /*space btwn colms*/
+        gap: 1rem;
+    }
+    header.flex{
+        padding-top: 0.5rem;
+    }
+}
+

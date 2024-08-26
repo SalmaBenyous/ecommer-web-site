@@ -1,0 +1,67 @@
+body {
+  background-color: var(--footerBg);
+
+  height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  overflow: hidden;
+  align-items: center;
+}
+header.flex .logo,
+.fa-bag-shopping,
+.fa-arrow-right-to-bracket,
+.fa-user-plus,
+.sign-in,
+.register {
+  color: var(--white);
+}
+.fa-bag-shopping:hover,
+.logo:hover {
+  scale: 0.9;
+}
+
+form input,
+label
+
+{
+  display: block;
+  width: 70%;
+  
+
+  margin-inline: auto;
+}
+
+
+.form {
+  width: 80%;
+  margin-inline: auto;
+  & label {
+    color: var(--white);
+    margin-top: 10px;
+  }
+  & input {
+    height: 40px;
+    border-radius: 8px;
+    border: none;
+    margin-block: 10px;
+  }
+
+  & .add-to-cart
+  {
+    background-color: var(--bleu-buttom);
+    border-radius: 5px;
+    color: #fff;
+    padding: 6px 10px;
+    font-size: 1rem;
+    margin-bottom: 5px;
+    width: fit-content;
+    margin-left: 15%;
+    margin-top: 20px;
+    transition: all 0.2s;
+  }
+  & .add-to-cart:hover{
+    opacity: 0.9;
+  }
+
+
+}

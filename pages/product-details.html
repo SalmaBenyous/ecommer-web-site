@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Details</title>
+    <link rel="stylesheet" href="../css/pages/footer.css" />
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="../images/bag-shopping-solid.svg" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="../images/bag-shopping-solid.svg"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../css/global.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../css/pages/products-details.css" />
+  </head>
+  <body
+    style="
+      height: 100vh;
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+     
+      align-items: center;
+    "
+  >
+    <header class="flex header-product">
+      <div style="padding-top: 10px" class="logo">
+        <i class="fa-solid fa-bag-shopping"></i>
+        <span style="font-weight: bold">USW</span>
+        <p style="letter-spacing: 1px; padding-bottom: 0.4rem">Shipping</p>
+      </div>
+      <div class="link">
+        <a style="position: relative" class="cart" href="./cart.html">
+          <i class="fa-solid fa-cart-shopping"></i> $0.00
+          <span class="product-number">2</span></a
+        >
+        <a href="./sign-in.html" class="sign-in">
+          <i class="fa-solid fa-arrow-right-to-bracket"></i> Sign in
+        </a>
+        <a href="../pages/register.html" class="register">
+          <i class="fa-solid fa-user-plus"></i> Regester</a
+        >
+      </div>
+    </header>
+    <main class="flex">
+      <img class="img-product" src="../images/3.webp" alt="" />
+
+      <div class="products-details ">
+        <div style="justify-content: space-between;" class="header-products flex">
+          <h3 class="titel">Product titel</h3>
+          <p style="color: rgb(255, 90, 123); font-weight: 600" class="price">
+            14.99$
+          </p>
+        </div>
+        <p class="description">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto
+          eligendi dolorum suscipit illo nisi quasi autem fugiat vero voluptate
+          dolores tempora eveniet laboriosam est quos optio dicta amet
+          recusandae voluptatem soluta qui, praesentium deserunt natus beatae?
+          Quod commodi nobis quidem?
+        </p>
+        <button class="add-to-cart">
+          <i style="color: #fff" class="fa-solid fa-cart-plus"></i> Add to Cart
+        </button>
+      </div>
+    </main>
+
+    <footer>
+      Designed and developed by
+      <span style="color: rgb(255, 90, 123)"> Salma Benyous</span>
+      &copy; 2024.
+    </footer>
+  </body>
+</html>
